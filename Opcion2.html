@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h2>Opcion 2</h2>
+  </header>
+    <style>
+      *{box-sizing:border-box;}
+
+        form{
+            width:300px;
+            padding:16px;
+            border-radius:1px;
+            margin:auto;
+            background-color:#eceaea;
+            font-family: arial;
+            font-size: 12px;
+        }
+
+        form label{
+            width:72px;
+            font-weight:bold;
+            display:inline-block;
+        }
+
+        form input[type="text"],
+        form input[type="number"]{
+            width:100%;
+            padding:3px 10px;
+            border:1px solid #adacacd2;
+            border-radius:3px;
+            background-color:white;
+            margin:8px 0;
+            display:inline-block;
+        }
+        .caja {
+            margin:5px 0px 0px 0px;	
+            border:1px solid #adacacd2;
+            height:25px;
+            width: 230px;
+            position:relative;
+            }
+            select {
+            background: white;
+            border: none;
+            font-size: 12px;
+            height: 25px;
+            padding: 0px;
+            width: 250px;
+        }
+        form input[type="checkbox"]{
+            position: relative;
+            border:1px solid #adacacd2;
+            top: 3px;
+            left: 0;
+            height: 12px;
+            width: 12px;
+            background-color: #eee;
+        }
+
+        form input[type="submit"]{
+            width:25%;
+            height: 30px;
+            margin-top:20px;
+            border:1px solid rgb(66, 115, 207);
+            border-radius:1px;
+            display:block;
+            color:#fff;
+            background-color:rgb(66, 115, 207);
+    
+        } 
+
+        form input[type="submit"]:hover{
+            cursor:pointer;
+        }
+
+        textarea{
+            width:100%;
+            height:50px;
+            border:1px solid #adacacd2;
+            border-radius:3px;
+            background-color:white;			
+            margin:8px 0;
+            /*resize: vertical | horizontal | none | both*/
+            display:block;
+        }
+    </style>
+  <main>
+    <section>
+      <!-- Aquí crearemos nuestro formulario -->
+      <!-- Un formulario de registro de alguien -->
+      <form action="#" target="" method="get" name="formDatosPersonales">
+        <h1>Sign Up</h1>
+        <label for="nombre">Fist name</label><br>
+        <input type="text" name="nombre" id="nombre" title="Ingresa mas de 6 caracteres"/><br>
+    
+        <label for="edad">Age</label><br>
+        <input type="number" name="edad" id="edad" min="0" max="120"/><br>
+    
+        <label for="income">Income</label><br>
+        <input type="number" name="income" id="income" required /><br>
+    
+        <label for="mensaje">More info</label><br>
+        <textarea name="mensaje" for="mensaje" title="Ingresa mas de 6 caracteres"></textarea>
+        
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="genero" value="M">Male
+        <input type="radio" name="genero" value="F">Female
+        <input type="radio" name="genero" value="NC">Trans
+        <br><br>
+        <label for="plan">Plan</label><br>
+        <div class="caja">
+            <select>
+                <option selected disabled>Select Plan</option>
+                <option value="P1">Plan1</option>
+                <option value="P2">Plan2</option>
+            </select>
+        </div><br><br>
+        <input type="checkbox" value="autos">Suscribe to Newsletter
+        <input type="submit" name="enviar" value="Update"/>
+    </form>
+    </section>
+  </main>
+</body>
+</html>

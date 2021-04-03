@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Opcion 1</h2>
+    </header>
+    <style>
+        
+        .form {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family:sans-serif;
+        }
+        .form input {
+            width: 90%;
+            height: 40px;
+            margin: 0.35rem;
+         }
+
+        .form button {
+            padding: 0.5em 1em;
+            border: none;
+            background:rgb(17, 155, 79);
+            color:white;
+            cursor: pointer;
+            width: 35%;
+            height: 38px;
+            font-size: 15px;
+            -webkit-appearance: none;
+         }
+         .form p{
+             margin-top: 0px;
+         }
+    </style>
+    <main>
+        <section>
+        <!-- Aquí crearemos nuestro formulario -->
+        <!-- Un formulario de registro de alguien -->
+        <form class="form">
+            <!-- aquí vamos a poner nuestros inputs -->
+            <h4>CREATE YOUR ACCOUNT</h4>
+            <p>
+            This is step 1
+            </p>
+            <input
+            type="email"
+            placeholder="Email"
+            required
+            pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}"
+            >
+            <input 
+            type="password"
+            placeholder="Password"
+            required
+            >
+            <input 
+            type="password"
+            placeholder="Confirm Password"
+            required
+            ><br>
+            <button type="submit">Next</button>
+        </form>
+        </section>
+    </main>
+</body>
+</html>
